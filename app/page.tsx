@@ -200,7 +200,7 @@ export default function Portfolio() {
 
           <div className="flex items-center gap-4">
             <nav className="flex gap-6">
-              {["About", "Projects", "Skills", "Contact"].map((item, index) => (
+              {["About", "Resume", "Projects", "Skills", "Contact"].map((item, index) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -504,6 +504,231 @@ export default function Portfolio() {
                     </span>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="relative z-10 py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2
+            className={`text-4xl font-black text-center mb-12 ${theme === "light" ? "bg-gradient-to-r from-blue-600 to-purple-600" : style === "retro" ? "bg-gradient-to-r from-green-400 to-yellow-400" : "bg-gradient-to-r from-cyan-400 to-pink-400"} bg-clip-text text-transparent ${style === "cyberpunk" ? "glitch-text" : style === "retro" ? "font-mono pixel-text" : ""}`}
+          >
+            {style === "retro" ? "RESUME" : "RESUME.EXE"}
+          </h2>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Resume Preview */}
+            <div
+              className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-8 ${style === "retro" ? "pixel-art" : "rounded-lg"} border backdrop-blur-sm`}
+            >
+              <div className="space-y-6">
+                {/* Header */}
+                <div className="text-center border-b border-current pb-4">
+                  <h3
+                    className={`text-2xl font-bold ${theme === "light" ? "text-slate-800" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-2`}
+                  >
+                    AYUSH PANDITA
+                  </h3>
+                  <p
+                    className={`${theme === "light" ? "text-blue-600" : style === "retro" ? "text-yellow-400 pixel-text" : "text-pink-400"} font-semibold`}
+                  >
+                    Data Science 3rd Yr Student
+                  </p>
+                  <div
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300 pixel-text" : "text-cyan-300"} mt-2 space-y-1`}
+                  >
+                    <p>Mumbai, Maharashtra - 400101</p>
+                    <p>panditaayush4549@gmail.com</p>
+                    <p>9769322190</p>
+                  </div>
+                </div>
+
+                {/* Summary */}
+                <div>
+                  <h4
+                    className={`text-lg font-bold ${theme === "light" ? "text-purple-600" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-3`}
+                  >
+                    SUMMARY
+                  </h4>
+                  <p
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text" : "text-cyan-100"} leading-relaxed`}
+                  >
+                    Data science student with a solid academic background in statistics and Data Visualization.
+                    Proficient in Python, statistics, and machine learning techniques.
+                  </p>
+                </div>
+
+                {/* Experience */}
+                <div>
+                  <h4
+                    className={`text-lg font-bold ${theme === "light" ? "text-purple-600" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-3`}
+                  >
+                    EXPERIENCE
+                  </h4>
+                  <div
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text" : "text-cyan-100"}`}
+                  >
+                    <div className="mb-3">
+                      <h5
+                        className={`font-semibold ${theme === "light" ? "text-slate-800" : style === "retro" ? "text-yellow-400" : "text-pink-400"}`}
+                      >
+                        Full Stack Developer Intern
+                      </h5>
+                      <p className="text-xs opacity-80">Young Thames LLP (Remote) | May 2025 – Oct 2025</p>
+                      <ul className="list-disc list-inside text-xs mt-1 space-y-1 opacity-90">
+                        <li>Built responsive web apps using React, Node.js</li>
+                        <li>Worked remotely with mentors via email, VC</li>
+                        <li>Maintained strict code confidentiality</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Education */}
+                <div>
+                  <h4
+                    className={`text-lg font-bold ${theme === "light" ? "text-purple-600" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-3`}
+                  >
+                    EDUCATION
+                  </h4>
+                  <div
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text" : "text-cyan-100"} space-y-2`}
+                  >
+                    <div>
+                      <h5
+                        className={`font-semibold ${theme === "light" ? "text-slate-800" : style === "retro" ? "text-yellow-400" : "text-pink-400"}`}
+                      >
+                        Bachelor of Technology
+                      </h5>
+                      <p className="text-xs">Mukesh Patel School of Technology | 2022 – 2026</p>
+                    </div>
+                    <div>
+                      <h5
+                        className={`font-semibold ${theme === "light" ? "text-slate-800" : style === "retro" ? "text-yellow-400" : "text-pink-400"}`}
+                      >
+                        Secondary School
+                      </h5>
+                      <p className="text-xs">Ryan International School | 2020 - 2022</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Key Skills Preview */}
+                <div>
+                  <h4
+                    className={`text-lg font-bold ${theme === "light" ? "text-purple-600" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-3`}
+                  >
+                    KEY SKILLS
+                  </h4>
+                  <div className="flex flex-wrap gap-1">
+                    {["Python", "Machine Learning", "Data Analysis", "React", "Tableau"].map((skill, index) => (
+                      <Badge
+                        key={index}
+                        className={`text-xs ${theme === "light" ? "bg-blue-100 text-blue-800" : style === "retro" ? "bg-green-500/20 text-green-400 pixel-text" : "bg-cyan-500/20 text-cyan-400"}`}
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Download Section */}
+            <div className="flex flex-col justify-center items-center space-y-8">
+              <div className="text-center">
+                <h3
+                  className={`text-2xl font-bold ${theme === "light" ? "text-slate-800" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-4`}
+                >
+                  {style === "retro" ? "DOWNLOAD_FULL_RESUME" : "Download Full Resume"}
+                </h3>
+                <p
+                  className={`${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300 pixel-text" : "text-cyan-300"} mb-8 ${style === "retro" ? "font-mono" : ""}`}
+                >
+                  {style === "retro"
+                    ? "> GET_THE_COMPLETE_PDF_VERSION_WITH_ALL_DETAILS"
+                    : "> Get the complete PDF version with all details, projects, and certifications"}
+                </p>
+              </div>
+
+              {/* Download Button */}
+              <Button
+                size="lg"
+                className={`${theme === "light" ? "bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 text-white" : style === "retro" ? "bg-yellow-500 hover:bg-yellow-400 text-black pixel-text" : "bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white"} font-bold transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_30px_rgba(244,114,182,0.7)]" : ""} group px-8 py-4`}
+                asChild
+              >
+                <a href="/resume/Ayush_Pandita_Resume.pdf" download="Ayush_Pandita_Resume.pdf">
+                  <svg className="w-5 h-5 mr-3 group-hover:animate-bounce" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fillRule="evenodd"
+                      d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  {style === "retro" ? "DOWNLOAD_PDF" : "DOWNLOAD PDF"}
+                </a>
+              </Button>
+
+              {/* Resume Stats */}
+              <div className={`grid grid-cols-2 gap-4 w-full max-w-md`}>
+                <div
+                  className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-4 ${style === "retro" ? "pixel-art" : "rounded-lg"} border text-center`}
+                >
+                  <div
+                    className={`text-2xl font-bold ${theme === "light" ? "text-blue-600" : style === "retro" ? "text-green-400" : "text-cyan-400"}`}
+                  >
+                    4+
+                  </div>
+                  <div
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300 pixel-text" : "text-cyan-300"}`}
+                  >
+                    {style === "retro" ? "CERTIFICATIONS" : "Certifications"}
+                  </div>
+                </div>
+                <div
+                  className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-4 ${style === "retro" ? "pixel-art" : "rounded-lg"} border text-center`}
+                >
+                  <div
+                    className={`text-2xl font-bold ${theme === "light" ? "text-purple-600" : style === "retro" ? "text-yellow-400" : "text-pink-400"}`}
+                  >
+                    6+
+                  </div>
+                  <div
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300 pixel-text" : "text-cyan-300"}`}
+                  >
+                    {style === "retro" ? "PROJECTS" : "Projects"}
+                  </div>
+                </div>
+              </div>
+
+              {/* Certifications Preview */}
+              <div
+                className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-6 ${style === "retro" ? "pixel-art" : "rounded-lg"} border w-full`}
+              >
+                <h4
+                  className={`text-lg font-bold ${theme === "light" ? "text-purple-600" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-4 text-center`}
+                >
+                  {style === "retro" ? "RECENT_CERTIFICATIONS" : "Recent Certifications"}
+                </h4>
+                <div
+                  className={`space-y-2 text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text" : "text-cyan-100"}`}
+                >
+                  <div className="flex justify-between">
+                    <span>IoT V2: DragonBoard</span>
+                    <span className="text-xs opacity-70">Feb 2024</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Blockchain Technologies</span>
+                    <span className="text-xs opacity-70">Feb 2024</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>IoT Networking</span>
+                    <span className="text-xs opacity-70">Aug 2023</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
