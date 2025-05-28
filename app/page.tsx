@@ -438,21 +438,21 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="space-y-4 sm:space-y-6">
               <p
-                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text break-words" : "font-mono"}`}
               >
                 {style === "retro"
                   ? "> IM_A_PASSIONATE_DATA_SCIENCE_STUDENT_IN_MY_THIRD_YEAR_WITH_A_STRONG_FOCUS_ON_AI_AND_ML"
                   : "> I'm a passionate Data Science student in my third year, with a strong focus on artificial intelligence and machine learning."}
               </p>
               <p
-                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text break-words" : "font-mono"}`}
               >
                 {style === "retro"
                   ? "> MY_JOURNEY_IN_TECH_HAS_LED_ME_TO_WORK_ON_DIVERSE_PROJECTS_FROM_HEALTHCARE_AI_TO_FINANCIAL_ANALYSIS"
                   : "> My journey in tech has led me to work on diverse projects ranging from healthcare AI to financial analysis and sports analytics."}
               </p>
               <p
-                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text break-words" : "font-mono"}`}
               >
                 {style === "retro"
                   ? "> I_ENJOY_BUILDING_APPLICATIONS_THAT_LEVERAGE_THE_POWER_OF_AI_TO_SOLVE_REAL_WORLD_PROBLEMS"
@@ -571,7 +571,7 @@ export default function Portfolio() {
                     SUMMARY
                   </h4>
                   <p
-                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text" : "text-cyan-100"} leading-relaxed`}
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text break-words" : "text-cyan-100"} leading-relaxed`}
                   >
                     Data science student with a solid academic background in statistics and Data Visualization.
                     Proficient in Python, statistics, and machine learning techniques.
@@ -586,7 +586,7 @@ export default function Portfolio() {
                     EXPERIENCE
                   </h4>
                   <div
-                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text" : "text-cyan-100"}`}
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text break-words" : "text-cyan-100"}`}
                   >
                     <div className="mb-3">
                       <h5
@@ -594,11 +594,11 @@ export default function Portfolio() {
                       >
                         Full Stack Developer Intern
                       </h5>
-                      <p className="text-xs opacity-80">Young Thames LLP (Remote) | May 2025 – Oct 2025</p>
+                      <p className="text-xs opacity-80 break-words">Young Thames LLP (Remote) | May 2025 – Oct 2025</p>
                       <ul className="list-disc list-inside text-xs mt-1 space-y-1 opacity-90">
-                        <li>Built responsive web apps using React, Node.js</li>
-                        <li>Worked remotely with mentors via email, VC</li>
-                        <li>Maintained strict code confidentiality</li>
+                        <li className="break-words">Built responsive web apps using React, Node.js</li>
+                        <li className="break-words">Worked remotely with mentors via email, VC</li>
+                        <li className="break-words">Maintained strict code confidentiality</li>
                       </ul>
                     </div>
                   </div>
@@ -612,7 +612,7 @@ export default function Portfolio() {
                     EDUCATION
                   </h4>
                   <div
-                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text" : "text-cyan-100"} space-y-2`}
+                    className={`text-sm ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100 pixel-text break-words" : "text-cyan-100"} space-y-2`}
                   >
                     <div>
                       <h5
@@ -620,7 +620,7 @@ export default function Portfolio() {
                       >
                         Bachelor of Technology
                       </h5>
-                      <p className="text-xs">Mukesh Patel School of Technology | 2022 – 2026</p>
+                      <p className="text-xs break-words">Mukesh Patel School of Technology | 2022 – 2026</p>
                     </div>
                     <div>
                       <h5
@@ -628,7 +628,7 @@ export default function Portfolio() {
                       >
                         Secondary School
                       </h5>
-                      <p className="text-xs">Ryan International School | 2020 - 2022</p>
+                      <p className="text-xs break-words">Ryan International School | 2020 - 2022</p>
                     </div>
                   </div>
                 </div>
@@ -854,14 +854,14 @@ export default function Portfolio() {
             {style === "retro" ? "CONTACT" : "CONTACT.EXE"}
           </h2>
           <p
-            className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-4 sm:mb-6 ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+            className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-4 sm:mb-6 ${style === "retro" ? "font-mono pixel-text break-words" : "font-mono"}`}
           >
             {style === "retro"
               ? "> READY_TO_COLLABORATE_ON_THE_NEXT_BIG_THING?"
               : "> Ready to collaborate on the next big thing?"}
           </p>
           <p
-            className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-6 sm:mb-8 ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+            className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-6 sm:mb-8 ${style === "retro" ? "font-mono pixel-text break-words" : "font-mono"}`}
           >
             {style === "retro"
               ? "> LETS_BUILD_SOMETHING_AMAZING_TOGETHER!"
@@ -894,7 +894,7 @@ export default function Portfolio() {
             className={`mt-6 sm:mt-8 p-3 sm:p-4 ${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} ${style === "retro" ? "pixel-art" : "rounded-lg"} backdrop-blur-sm inline-block`}
           >
             <p
-              className={`${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text" : "font-mono"} text-sm sm:text-base`}
+              className={`${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text break-words" : "font-mono"} text-sm sm:text-base`}
             >
               {"> "}
               <span
