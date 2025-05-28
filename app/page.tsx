@@ -226,11 +226,11 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section
-        className={`relative z-10 max-w-6xl mx-auto px-4 py-20 transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
+        className={`relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
       >
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1">
-            <div className="flex items-center gap-2 mb-6">
+        <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12">
+          <div className="flex-1 w-full">
+            <div className="flex flex-wrap items-center gap-2 mb-4 sm:mb-6">
               <Badge
                 className={`${theme === "light" ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white" : style === "retro" ? "bg-green-500 text-black pixel-text" : "bg-gradient-to-r from-cyan-500 to-blue-500 text-black"} font-bold ${style === "cyberpunk" ? "animate-pulse" : style === "retro" ? "animate-bounce-slow" : ""}`}
               >
@@ -273,10 +273,10 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="flex gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8">
               <Button
                 size="lg"
-                className={`${theme === "light" ? "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-white" : style === "retro" ? "bg-green-500 hover:bg-green-400 text-black pixel-text" : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black"} font-bold transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]" : ""} group`}
+                className={`${theme === "light" ? "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-white" : style === "retro" ? "bg-green-500 hover:bg-green-400 text-black pixel-text" : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black"} font-bold transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]" : ""} group w-full sm:w-auto`}
                 onClick={() => (window.location.href = "mailto:panditaayush4549@gmail.com")}
               >
                 <Mail className="w-4 h-4 mr-2 group-hover:animate-bounce" />
@@ -285,7 +285,7 @@ export default function Portfolio() {
               <Button
                 variant="outline"
                 size="lg"
-                className={`${theme === "light" ? "border-purple-400 text-purple-600 hover:bg-purple-400 hover:text-white" : style === "retro" ? "border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black pixel-text" : "border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-black"} transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_20px_rgba(244,114,182,0.5)]" : ""}`}
+                className={`${theme === "light" ? "border-purple-400 text-purple-600 hover:bg-purple-400 hover:text-white" : style === "retro" ? "border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black pixel-text" : "border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-black"} transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_20px_rgba(244,114,182,0.5)]" : ""} w-full sm:w-auto`}
                 asChild
               >
                 <a href="https://github.com/AP4549" target="_blank" rel="noopener noreferrer">
@@ -296,7 +296,7 @@ export default function Portfolio() {
             </div>
 
             <div
-              className={`flex items-center gap-6 text-sm ${theme === "light" ? "text-slate-500" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+              className={`flex flex-wrap items-center gap-4 sm:gap-6 text-sm ${theme === "light" ? "text-slate-500" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
             >
               <div
                 className={`flex items-center gap-1 ${theme === "light" ? "hover:text-purple-600" : style === "retro" ? "hover:text-yellow-400" : "hover:text-pink-400"} transition-colors`}
@@ -353,7 +353,7 @@ export default function Portfolio() {
 
               {/* Center Avatar */}
               <div
-                className={`absolute inset-12 ${theme === "light" ? "bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500" : style === "retro" ? "bg-gradient-to-br from-green-400 via-yellow-500 to-red-500" : "bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500"} ${style === "retro" ? "pixel-art" : "rounded-full"} p-1 animate-pulse`}
+                className={`absolute inset-8 sm:inset-12 ${theme === "light" ? "bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500" : style === "retro" ? "bg-gradient-to-br from-green-400 via-yellow-500 to-red-500" : "bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500"} ${style === "retro" ? "pixel-art" : "rounded-full"} p-1 animate-pulse`}
               >
                 <div
                   className={`w-full h-full ${style === "retro" ? "pixel-art bg-gray-900" : "rounded-full bg-black"} flex items-center justify-center relative overflow-hidden`}
@@ -362,7 +362,7 @@ export default function Portfolio() {
                     className={`absolute inset-0 ${theme === "light" ? "bg-gradient-to-br from-blue-400/20 to-purple-400/20" : style === "retro" ? "bg-gradient-to-br from-green-400/20 to-yellow-400/20" : "bg-gradient-to-br from-cyan-400/20 to-pink-400/20"} ${style === "cyberpunk" ? "animate-gradient-x" : ""}`}
                   ></div>
                   <span
-                    className={`text-6xl font-black ${theme === "light" ? "bg-gradient-to-r from-blue-600 to-purple-600" : style === "retro" ? "bg-gradient-to-r from-green-400 to-yellow-400" : "bg-gradient-to-r from-cyan-400 to-pink-400"} bg-clip-text text-transparent relative z-10 ${style === "retro" ? "font-mono pixel-text" : ""}`}
+                    className={`text-4xl sm:text-6xl font-black ${theme === "light" ? "bg-gradient-to-r from-blue-600 to-purple-600" : style === "retro" ? "bg-gradient-to-r from-green-400 to-yellow-400" : "bg-gradient-to-r from-cyan-400 to-pink-400"} bg-clip-text text-transparent relative z-10 ${style === "retro" ? "font-mono pixel-text" : ""}`}
                   >
                     AP
                   </span>
@@ -418,24 +418,24 @@ export default function Portfolio() {
           >
             {style === "retro" ? "ABOUT_ME" : "ABOUT.EXE"}
           </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className="space-y-4 sm:space-y-6">
               <p
-                className={`text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
               >
                 {style === "retro"
                   ? "> IM_A_PASSIONATE_DATA_SCIENCE_STUDENT_IN_MY_THIRD_YEAR_WITH_A_STRONG_FOCUS_ON_AI_AND_ML"
                   : "> I'm a passionate Data Science student in my third year, with a strong focus on artificial intelligence and machine learning."}
               </p>
               <p
-                className={`text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
               >
                 {style === "retro"
                   ? "> MY_JOURNEY_IN_TECH_HAS_LED_ME_TO_WORK_ON_DIVERSE_PROJECTS_FROM_HEALTHCARE_AI_TO_FINANCIAL_ANALYSIS"
                   : "> My journey in tech has led me to work on diverse projects ranging from healthcare AI to financial analysis and sports analytics."}
               </p>
               <p
-                className={`text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+                className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-100" : "text-cyan-100"} leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
               >
                 {style === "retro"
                   ? "> I_ENJOY_BUILDING_APPLICATIONS_THAT_LEVERAGE_THE_POWER_OF_AI_TO_SOLVE_REAL_WORLD_PROBLEMS"
@@ -623,7 +623,7 @@ export default function Portfolio() {
                   >
                     KEY SKILLS
                   </h4>
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-wrap gap-2">
                     {["Python", "Machine Learning", "Data Analysis", "React", "Tableau"].map((skill, index) => (
                       <Badge
                         key={index}
@@ -638,15 +638,15 @@ export default function Portfolio() {
             </div>
 
             {/* Download Section */}
-            <div className="flex flex-col justify-center items-center space-y-8">
+            <div className="flex flex-col justify-center items-center space-y-6 sm:space-y-8">
               <div className="text-center">
                 <h3
-                  className={`text-2xl font-bold ${theme === "light" ? "text-slate-800" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-4`}
+                  className={`text-xl sm:text-2xl font-bold ${theme === "light" ? "text-slate-800" : style === "retro" ? "text-green-400 pixel-text" : "text-cyan-400"} mb-3 sm:mb-4`}
                 >
                   {style === "retro" ? "DOWNLOAD_FULL_RESUME" : "Download Full Resume"}
                 </h3>
                 <p
-                  className={`${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300 pixel-text" : "text-cyan-300"} mb-8 ${style === "retro" ? "font-mono" : ""}`}
+                  className={`${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300 pixel-text" : "text-cyan-300"} mb-6 sm:mb-8 ${style === "retro" ? "font-mono" : ""}`}
                 >
                   {style === "retro"
                     ? "> GET_THE_COMPLETE_PDF_VERSION_WITH_ALL_DETAILS"
@@ -657,7 +657,7 @@ export default function Portfolio() {
               {/* Download Button */}
               <Button
                 size="lg"
-                className={`${theme === "light" ? "bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 text-white" : style === "retro" ? "bg-yellow-500 hover:bg-yellow-400 text-black pixel-text" : "bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white"} font-bold transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_30px_rgba(244,114,182,0.7)]" : ""} group px-8 py-4`}
+                className={`${theme === "light" ? "bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 text-white" : style === "retro" ? "bg-yellow-500 hover:bg-yellow-400 text-black pixel-text" : "bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-400 hover:to-purple-500 text-white"} font-bold transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_30px_rgba(244,114,182,0.7)]" : ""} group px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto`}
                 asChild
               >
                 <a href="/resume/Ayush_Pandita_Resume.pdf" download="Ayush_Pandita_Resume.pdf">
@@ -673,9 +673,9 @@ export default function Portfolio() {
               </Button>
 
               {/* Resume Stats */}
-              <div className={`grid grid-cols-2 gap-4 w-full max-w-md`}>
+              <div className={`grid grid-cols-2 gap-3 sm:gap-4 w-full max-w-md`}>
                 <div
-                  className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-4 ${style === "retro" ? "pixel-art" : "rounded-lg"} border text-center`}
+                  className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-3 sm:p-4 ${style === "retro" ? "pixel-art" : "rounded-lg"} border text-center`}
                 >
                   <div
                     className={`text-2xl font-bold ${theme === "light" ? "text-blue-600" : style === "retro" ? "text-green-400" : "text-cyan-400"}`}
@@ -689,7 +689,7 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <div
-                  className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-4 ${style === "retro" ? "pixel-art" : "rounded-lg"} border text-center`}
+                  className={`${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} p-3 sm:p-4 ${style === "retro" ? "pixel-art" : "rounded-lg"} border text-center`}
                 >
                   <div
                     className={`text-2xl font-bold ${theme === "light" ? "text-purple-600" : style === "retro" ? "text-yellow-400" : "text-pink-400"}`}
