@@ -230,22 +230,22 @@ export default function Portfolio() {
       >
         <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12">
           <div className="flex-1 w-full">
-            <div className="flex flex-wrap items-center gap-2 mb-4 sm:mb-6">
+            <div className="flex flex-wrap items-center gap-1 sm:gap-2 mb-4 sm:mb-6">
               <Badge
-                className={`${theme === "light" ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white" : style === "retro" ? "bg-green-500 text-black pixel-text" : "bg-gradient-to-r from-cyan-500 to-blue-500 text-black"} font-bold ${style === "cyberpunk" ? "animate-pulse" : style === "retro" ? "animate-bounce-slow" : ""}`}
+                className={`${theme === "light" ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white" : style === "retro" ? "bg-green-500 text-black pixel-text" : "bg-gradient-to-r from-cyan-500 to-blue-500 text-black"} font-bold text-xs sm:text-sm ${style === "cyberpunk" ? "animate-pulse" : style === "retro" ? "animate-bounce-slow" : ""}`}
               >
                 <Zap className="w-3 h-3 mr-1" />
                 {style === "retro" ? "DATA_SCIENTIST" : "DATA SCIENTIST"}
               </Badge>
               <Badge
-                className={`${theme === "light" ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white" : style === "retro" ? "bg-yellow-500 text-black pixel-text" : "bg-gradient-to-r from-pink-500 to-purple-500 text-white"} border-0 ${style === "cyberpunk" ? "animate-bounce-slow" : style === "retro" ? "animate-pulse" : ""}`}
+                className={`${theme === "light" ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white" : style === "retro" ? "bg-yellow-500 text-black pixel-text" : "bg-gradient-to-r from-pink-500 to-purple-500 text-white"} border-0 text-xs sm:text-sm ${style === "cyberpunk" ? "animate-bounce-slow" : style === "retro" ? "animate-pulse" : ""}`}
               >
                 {style === "retro" ? "HIRE_ME" : "AVAILABLE FOR HIRE"}
               </Badge>
             </div>
 
             <h1
-              className={`text-6xl lg:text-7xl font-black mb-6 leading-tight ${style === "retro" ? "font-mono pixel-text" : ""}`}
+              className={`text-4xl sm:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight ${style === "retro" ? "font-mono pixel-text" : ""}`}
             >
               <span
                 className={`block ${theme === "light" ? "text-slate-900" : style === "retro" ? "text-green-400" : "text-white"} ${style === "cyberpunk" ? "glitch-text" : ""}`}
@@ -261,7 +261,7 @@ export default function Portfolio() {
             </h1>
 
             <div
-              className={`text-xl ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-8 leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+              className={`text-sm sm:text-base xl:text-xl ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-6 sm:mb-8 leading-relaxed ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
             >
               <div className={style === "cyberpunk" ? "typing-animation" : ""}>
                 {style === "retro"
@@ -280,23 +280,23 @@ export default function Portfolio() {
                 onClick={() => (window.location.href = "mailto:panditaayush4549@gmail.com")}
               >
                 <Mail className="w-4 h-4 mr-2 group-hover:animate-bounce" />
-                {style === "retro" ? "EMAIL_ME" : "CONTACT ME"}
+                {style === "retro" ? "SEND_EMAIL" : "SEND EMAIL"}
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                className={`${theme === "light" ? "border-purple-400 text-purple-600 hover:bg-purple-400 hover:text-white" : style === "retro" ? "border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black pixel-text" : "border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-black"} transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_20px_rgba(244,114,182,0.5)]" : ""} w-full sm:w-auto`}
+                className={`${theme === "light" ? "border-purple-400 text-purple-600 hover:bg-purple-400 hover:text-white" : style === "retro" ? "border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black pixel-text" : "border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-black"} transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_30px_rgba(244,114,182,0.7)]" : ""}`}
                 asChild
               >
                 <a href="https://github.com/AP4549" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2" />
-                  {style === "retro" ? "VIEW_GITHUB" : "VIEW GITHUB"}
+                  {style === "retro" ? "FOLLOW_ON_GITHUB" : "FOLLOW ON GITHUB"}
                 </a>
               </Button>
             </div>
 
             <div
-              className={`flex flex-wrap items-center gap-4 sm:gap-6 text-sm ${theme === "light" ? "text-slate-500" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+              className={`flex flex-wrap items-center justify-center sm:justify-start gap-x-4 sm:gap-x-6 gap-y-2 text-sm ${theme === "light" ? "text-slate-500" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
             >
               <div
                 className={`flex items-center gap-1 ${theme === "light" ? "hover:text-purple-600" : style === "retro" ? "hover:text-yellow-400" : "hover:text-pink-400"} transition-colors`}
@@ -829,31 +829,31 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative z-10 py-20">
+      <section id="contact" className="relative z-10 py-12 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2
-            className={`text-4xl font-black mb-8 ${theme === "light" ? "bg-gradient-to-r from-blue-600 to-purple-600" : style === "retro" ? "bg-gradient-to-r from-green-400 to-yellow-400" : "bg-gradient-to-r from-cyan-400 to-pink-400"} bg-clip-text text-transparent ${style === "cyberpunk" ? "glitch-text" : style === "retro" ? "font-mono pixel-text" : ""}`}
+            className={`text-3xl sm:text-4xl font-black mb-6 sm:mb-8 ${theme === "light" ? "bg-gradient-to-r from-blue-600 to-purple-600" : style === "retro" ? "bg-gradient-to-r from-green-400 to-yellow-400" : "bg-gradient-to-r from-cyan-400 to-pink-400"} bg-clip-text text-transparent ${style === "cyberpunk" ? "glitch-text" : style === "retro" ? "font-mono pixel-text" : ""}`}
           >
             {style === "retro" ? "CONTACT" : "CONTACT.EXE"}
           </h2>
           <p
-            className={`text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-8 ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+            className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-4 sm:mb-6 ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
           >
             {style === "retro"
               ? "> READY_TO_COLLABORATE_ON_THE_NEXT_BIG_THING?"
               : "> Ready to collaborate on the next big thing?"}
           </p>
           <p
-            className={`text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-8 ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
+            className={`text-base sm:text-lg ${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-300" : "text-cyan-300"} mb-6 sm:mb-8 ${style === "retro" ? "font-mono pixel-text" : "font-mono"}`}
           >
             {style === "retro"
               ? "> LETS_BUILD_SOMETHING_AMAZING_TOGETHER!"
               : "> Let's build something amazing together!"}
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center flex-col sm:flex-row gap-4">
             <Button
               size="lg"
-              className={`${theme === "light" ? "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-white" : style === "retro" ? "bg-green-500 hover:bg-green-400 text-black pixel-text" : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black"} font-bold transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_30px_rgba(34,211,238,0.7)]" : ""} group`}
+              className={`${theme === "light" ? "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-400 hover:to-purple-500 text-white" : style === "retro" ? "bg-green-500 hover:bg-green-400 text-black pixel-text" : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black"} font-bold transform hover:scale-105 transition-all duration-300 ${style === "cyberpunk" ? "hover:shadow-[0_0_30px_rgba(34,211,238,0.7)]" : ""} group w-full sm:w-auto`}
               onClick={() => (window.location.href = "mailto:panditaayush4549@gmail.com")}
             >
               <Mail className="w-4 h-4 mr-2 group-hover:animate-bounce" />
@@ -874,10 +874,10 @@ export default function Portfolio() {
 
           {/* Email Display */}
           <div
-            className={`mt-8 p-4 ${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} ${style === "retro" ? "pixel-art" : "rounded-lg"} backdrop-blur-sm inline-block`}
+            className={`mt-6 sm:mt-8 p-3 sm:p-4 ${theme === "light" ? "bg-white/50 border-slate-200" : style === "retro" ? "bg-gray-900/50 border-green-400/30" : "bg-black/50 border-cyan-400/30"} ${style === "retro" ? "pixel-art" : "rounded-lg"} backdrop-blur-sm inline-block`}
           >
             <p
-              className={`${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text" : "font-mono"} text-sm`}
+              className={`${theme === "light" ? "text-slate-600" : style === "retro" ? "text-green-400" : "text-cyan-400"} ${style === "retro" ? "font-mono pixel-text" : "font-mono"} text-sm sm:text-base`}
             >
               {"> "}
               <span
