@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { StyleToggle } from "@/components/style-toggle"
 import { useTheme } from "@/components/theme-context"
+import { MobileSidebar } from "@/components/mobile-sidebar"
 
 export default function Portfolio() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -184,7 +185,23 @@ export default function Portfolio() {
 
       {/* Header */}
       <header
-        className={`relative z-10 ${theme === "light" ? "bg-white/80" : style === "retro" ? "bg-gray-900/80" : "bg-black/80"} backdrop-blur-md border-b ${theme === "light" ? "border-slate-200" : style === "retro" ? "border-green-400/30" : "border-cyan-400/30"} sticky top-0`}
+        className={`relative z-10 ${theme === "light" ? "bg-white/80" : style === "retro" ? "bg-gray-900/80" : "bg-black/80"} backdrop-blur-md border-b ${theme === "light" ? "border-slate-200" : style === "retro" ? "border-green-400/30" : "border-cyan-400/30"} sticky top-0 px-4 py-4 flex justify-between items-center sm:hidden`}
+      >
+         <div className="flex items-center gap-2">
+            <Terminal
+              className={`w-6 h-6 ${theme === "light" ? "text-blue-600" : style === "retro" ? "text-green-400" : "text-cyan-400"} animate-pulse`}
+            />
+            <h1
+              className={`text-2xl font-bold ${style === "retro" ? "font-mono pixel-text" : ""} ${theme === "light" ? "bg-gradient-to-r from-blue-600 to-purple-600" : style === "retro" ? "bg-gradient-to-r from-green-400 to-yellow-400" : "bg-gradient-to-r from-cyan-400 to-pink-400"} bg-clip-text text-transparent ${style === "cyberpunk" ? "glitch-text" : ""}`}
+            >
+              {style === "retro" ? "AYUSH_16BIT" : "AYUSH.EXE"}
+            </h1>
+          </div>
+        <MobileSidebar />
+      </header>
+
+      <header
+        className={`relative z-10 ${theme === "light" ? "bg-white/80" : style === "retro" ? "bg-gray-900/80" : "bg-black/80"} backdrop-blur-md border-b ${theme === "light" ? "border-slate-200" : style === "retro" ? "border-green-400/30" : "border-cyan-400/30"} sticky top-0 hidden sm:block`}
       >
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
